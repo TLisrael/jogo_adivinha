@@ -7,8 +7,8 @@ def pc_adivinha(x):
     maior = x
     feedback = ''
     while feedback != 'c':
-        if menor != maior:
-            adivinhe = random.randint(menor, maior)
+        if menor != maior: # Se o número menor for diferente do maior
+            adivinhe = random.randint(menor, maior) # Gere um número aleatório
         else:
             adivinhe = menor
         feedback = input(
